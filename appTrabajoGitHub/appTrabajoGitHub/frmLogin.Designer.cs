@@ -1,6 +1,6 @@
 ﻿namespace appTrabajoGitHub
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -33,6 +33,8 @@
             this.btnIngresar = new System.Windows.Forms.Button();
             this.txtDoc = new System.Windows.Forms.TextBox();
             this.lblDoc = new System.Windows.Forms.Label();
+            this.rdbOperario = new System.Windows.Forms.RadioButton();
+            this.rdbAdministrador = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +55,7 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(91, 125);
+            this.btnIngresar.Location = new System.Drawing.Point(96, 183);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(75, 23);
             this.btnIngresar.TabIndex = 3;
@@ -76,17 +78,41 @@
             this.lblDoc.TabIndex = 4;
             this.lblDoc.Text = "Doc";
             // 
-            // Form1
+            // rdbOperario
+            // 
+            this.rdbOperario.AutoSize = true;
+            this.rdbOperario.Location = new System.Drawing.Point(49, 122);
+            this.rdbOperario.Name = "rdbOperario";
+            this.rdbOperario.Size = new System.Drawing.Size(65, 17);
+            this.rdbOperario.TabIndex = 6;
+            this.rdbOperario.TabStop = true;
+            this.rdbOperario.Text = "Operario";
+            this.rdbOperario.UseVisualStyleBackColor = true;
+            // 
+            // rdbAdministrador
+            // 
+            this.rdbAdministrador.AutoSize = true;
+            this.rdbAdministrador.Location = new System.Drawing.Point(49, 145);
+            this.rdbAdministrador.Name = "rdbAdministrador";
+            this.rdbAdministrador.Size = new System.Drawing.Size(88, 17);
+            this.rdbAdministrador.TabIndex = 7;
+            this.rdbAdministrador.TabStop = true;
+            this.rdbAdministrador.Text = "Administrador";
+            this.rdbAdministrador.UseVisualStyleBackColor = true;
+            // 
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(259, 175);
+            this.ClientSize = new System.Drawing.Size(259, 218);
+            this.Controls.Add(this.rdbAdministrador);
+            this.Controls.Add(this.rdbOperario);
             this.Controls.Add(this.txtDoc);
             this.Controls.Add(this.lblDoc);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "frmLogin";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -100,6 +126,8 @@
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.TextBox txtDoc;
         private System.Windows.Forms.Label lblDoc;
+        private System.Windows.Forms.RadioButton rdbOperario;
+        private System.Windows.Forms.RadioButton rdbAdministrador;
     }
 }
 
